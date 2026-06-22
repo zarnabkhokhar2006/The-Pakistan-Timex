@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="styles.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Pakistan Times</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+   
+    
+</head>
+<body>
+    <div class="container">
+        <header>
+            <div class="logo">
+                <i class="fas fa-newspaper"></i>
+                <span>The Pakistan Times</span>
+            </div>
+            <nav class="nav-links">
+                <a href="#">Home</a>
+                <a href="#">World</a>
+                <a href="#">Politics</a>
+                <a href="#">Technology</a>
+                <a href="#">Sports</a>
+            </nav>
+        </header>
+
+        <div class="search-bar">
+            <input type="text" id="search-input" placeholder="Search for news...">
+            <button id="search-btn"><i class="fas fa-search"></i> Search</button>
+        </div>
+
+        <div class="bg-selector">
+           
+            <button class="bg-btn" data-bg="1">Page 1</button>
+            <button class="bg-btn" data-bg="2">Page 2</button>
+            <button class="bg-btn" data-bg="3">Page 3</button>
+        </div>
+
+        <div class="filters">
+            <button class="filter-btn active" data-category="general">General</button>
+            <button class="filter-btn" data-category="business">Business</button>
+            <button class="filter-btn" data-category="technology">Technology</button>
+            <button class="filter-btn" data-category="sports">Sports</button>
+            <button class="filter-btn" data-category="entertainment">Entertainment</button>
+            <button class="filter-btn" data-category="health">Health</button>
+            <button class="filter-btn" data-category="science">Science</button>
+        </div>
+
+        <div id="news-container" class="news-grid">
+            <!-- News articles will be loaded here -->
+        </div>
+
+        <button id="load-more" class="load-more">Load More News</button>
+    </div>
+
+</body>
+
+<script src="app.js">app.js</script>
+<script src="app2.js">app2.js</script>
+</html>
